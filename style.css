@@ -1,16 +1,96 @@
-nav{
-  margin-top: 1rem;
+/* ---- DEFAULT STYLES ---- */
+
+body{
+  font-family: 'Muli', sans-serif;
+  background-color: #4c4f54;
+  color: #f2f4f7;
+}
+
+.flex-container{
   display: flex;
-  justify-content: space-around;
+}
+
+/* ---- TEXT STYLES ----- */
+
+.article__content{
+  line-height: 1.7em;
+  font-size: 1.2em;
+}
+
+/* Headings and title text */
+
+.title{
+  font-family: 'Beth Ellen', cursive;
+  font-weight: normal;
+  text-align: center;
+  color: #f5d431;
+}
+
+.title--small{
+  font-size: 2em;
+}
+
+.title--medium{
+  font-size: 2.7em;
+}
+
+.title--large{
+  font-size: 3.7em;
 }
 
 
-a{
+/* ---- BLOG LAYOUT STYLES ----- */
+
+/* Side nav should appear on the let side of the page, but in the HTML markup it comes after the blog container. We need to use row-reverse to switch the order. */
+.blog{
+  flex-direction: row-reverse;
+  margin-top: 20vh;
+}
+
+.blog__container{
+  width: 60vw;
+  background-color: #727575;
+  border-radius: 3%;
+  margin: auto;
+  padding: 1em;
+}
+
+.blog__article{
+  border-bottom: 2px solid black;
+  padding: 2em;
+}
+
+/* ---- NAVBAR STYLES ---- */
+
+.navbar{
+  display: flex;
+  padding: 2em;
+}
+.navbar > a {
   display: block;
-  color: black;
+  color:#f5d431;
   text-decoration: none;
 }
 
-a:hover{
-  color: darkgray;
+.navbar > a:hover {
+  color: #fff200
 }
+
+/* Side nav */
+.navbar--side h2{
+  text-align: left;
+}
+
+.navbar--side{
+  width: 15vw;
+  flex-direction: column;
+}
+
+.navbar--side a {
+  display: block;
+  margin-top: 1em;
+  font-size: 1.4em;
+}
+
+
+

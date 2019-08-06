@@ -5,54 +5,71 @@
 .block--modifier {} -->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Blog</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Beth+Ellen|Muli&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <!-- answer to lightning exercise, delete later -->
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About Me</a>
-    <a href="#">My Projects</a>
-    <a href="#">Contact Me</a>
-  </nav>
-  <article>
+  <body>
+    <!-- Blog header component w/ title and subtitle -->
     <header>
-      <h1>First Week at NSS</h1>
+      <h1 class="title title--large">My NewForce Blog</h1>
+      <h2 class="title title--small">by me, a student</h2>
     </header>
 
-    <section>
-      Saw some amazing projects from the previous
-      cohort. I'm nervous that I won't be able to do
-      that in 3 months, but the instructors keep telling
-      me that I will.
+    <!-- Flex container (so that side nav and blog appear side by side)-->
+    <section class="flex-container blog">
+      <!-- Blog component-->
+      <section class="blog__container">
+        <!--Article component w/ title and content-->
+        <article class="article blog__article">
+          <h3 class="title title--small">Cohort One's Demo Day</h3>
+          <p class="content article__content">
+            Saw some pretty cool projects from the previous cohort. I'm nervous
+            that I won't be able to do that in 3 months, but the instructors
+            keep telling me that I will.
+          </p>
+        </article>
+
+        <!--Article component w/ title and content-->
+        <article class="article blog__article">
+          <h3 class="title title--small">First Day of Class</h3>
+          <p class="content article__content">
+            Learned some CSS. Still not sure about this whole console thing. CSS
+            feels okay when I watch an instructor do it but it's hard when I
+            have to do it on my own.
+          </p>
+        </article>
+
+        <!--Article component w/ title and content-->
+        <article class="article blog__article">
+          <h3 class="title title--small">Second Day!</h3>
+          <p class="content article__content">
+            Learned some semantic HTML and bash scripts. Feeling sliiiiightly
+            more comfortable moving around the terminal, but not much. HTML
+            feels pretty okay, I think I might get the hang of this coding thing
+            after all.
+          </p>
+        </article>
+      </section>
+
+      <!--Side nav bar-->
+      <aside class="navbar navbar--side">
+        <header class="navbar__title">
+          <h2 class="title title--small">Promoted Articles</h2>
+        </header>
+        <a class="navbar__item" href="#">First Week at NSS</a>
+        <a class="navbar__item" href="#">Starting NSS Soon</a>
+        <a class="navbar__item" href="#">I Got Accepted!</a>
+        <a class="navbar__item" href="#">Thinking of Attending a Bootcamp</a>
+      </aside>
     </section>
-
-    <footer>
-      By Johhny Q. Student &copy; 2018
-    </footer>
-  </article>
-
-  <aside>
-    <header>
-      <h2>Promoted Articles</h2>
-    </header>
-
-    <ul>
-      <li>First Week at NSS</li>
-      <li>Starting NSS Soon</li>
-      <li>I Got Accepted!</li>
-      <li>Thinking of Attending a Bootcamp</li>
-    </ul>
-  </aside>
-
-
-</body>
-
+  </body>
 </html>
